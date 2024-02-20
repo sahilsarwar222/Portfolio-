@@ -1,0 +1,577 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* universal selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+/* color code  */
+:root{
+   --primary-color:#fff;
+   --primary-shade:#f7f5f2;
+   --secondary-color:#000;
+   --secondary-shade:#4b4c4c;
+   --red-color:#d40700;
+   --red-shade:#b20600; 
+   --accent-color:#ffee63;
+}
+
+/* ul and li */
+ul li{
+    list-style: none;
+}
+
+/* to remove underlines of anker tags */
+a{
+    text-decoration: none;
+}
+
+/*header section */
+
+header{
+    /* background-color */
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(50, 50, 51, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(to right, #040404, #242424, #656565);
+    /* text color */
+    color:var(--primary-color);
+}
+
+.nav-bar{
+    padding: 30px 0;
+}
+
+/* height of bachground */
+.content{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*  color of sofia */
+span{
+    color: var(--red-color);
+}
+
+/* for home,about.... */
+ul li a{
+    /* top bottom =0 left right=10px */
+ margin: 0 10px;
+ /* top bottom =0 left right=5px */
+ padding: 0 5px;
+ color: var(--accent-color);
+ font-size: 18px;
+ /* point cursor */
+ cursor: pointer;
+ position: relative;
+}
+/* underline on anker tag after hover on it */
+ul li a::before{
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    /* for smoothness */
+    transition: 0.6s ease;
+}
+/* hover on anker tag */
+ul li a:hover::before{
+    width: 100%;
+}
+
+/* button_1 i.e Hire Me*/
+.button_1{
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font: 16px;
+    padding: 0.5px;
+    font-weight: 500px;
+}
+
+/* when you hover on button */
+.button_1:hover{
+    /* background color will changw */
+    background-color: var(--red-shade);
+    /* text color will chnage */
+    color: var(--primary-shade);
+    /* you seen border when you hover on button */
+    border: 2px solid var(--red-color);
+}
+/* button_2 i.e Download CV*/
+.button_2{
+    width: 140px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font: 16px;
+    padding: 0.5px;
+    font-weight: 500px;
+}
+.right{
+    display:flex;
+}
+
+h2,p{
+    margin-top: 10px;
+}
+button{
+    margin-top:20px;
+}
+h2,h4{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/* about section */
+.about-me-content{
+margin-left: 10%;
+height: 100vh;
+display: flex;
+align-items: center;
+position: relative;
+}
+/* left side h2 tag */
+.about-me-left h2{
+    margin-top:0;
+}
+/* layout h3 tag */
+.about-me-layout h3{
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: left;
+    margin-left: 10%;
+}
+/* about me section */
+.about-me-sec{
+    min-height: 100vh;
+    background-color: var(--secondary-shade);
+    color:var(--primary-color);
+}
+/* content of abouut me */
+.about-me-content .about-me-right img{
+    width: 620;
+    height: 610px;
+    transform: scalex(-1);
+}
+/* ul li */
+.about-me-ul li{
+    margin-top: 20px;
+}
+/* span of li */
+.about-me-ul li span{
+    color: #C6DCE4;
+    font-weight: 600px;
+}
+/* about me section hr */
+.about-me-sec hr{
+    border: 2px solid red;
+    width:8%;
+    margin-left:12%;
+    
+}
+/* about me section right hr */
+.about-me-sec .about-me-right hr{
+    border: 2px solid red;
+    width:80%;
+    margin-top: 10px;
+    margin-left:10%;
+}
+/* /button_3 */
+.button_3{
+    margin-top:20px;
+    background-color: var(--red-color);
+    width: 90px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font: 16px;
+    padding: 0.5px;
+    font-weight: 500px;
+
+}
+/* hover */
+.button_3:hover{
+    /* background color will changw */
+    background-color: var(--red-shade);
+    /* text color will chnage */
+    color: var(--primary-shade);
+    /* you seen border when you hover on button */
+    border: 2px solid var(--red-color);
+}
+/* /h3 of dot.color */
+.about-me-content .dot-color h3{
+    padding: 20px;
+    text-transform: capitalize;
+}
+/* colors for color used */
+.color{
+    width: 22px;
+    height:22px;
+    border-radius:50%;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+.colour_1{
+    background-color: var(--primary-color);
+}
+.colour_2{
+    background-color: var(--seconday-color);
+}
+.colour_3{
+    background-color: var(--primary-shade);
+}
+.colour_4{
+    background-color: #C6DCE4;
+}
+.colour_4{
+    background-color: var(--accent-color);
+}
+/* about me section end */
+
+/* portfolio section starts*/
+/* h3 of portfolio layout */
+.portfolio-layout > h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding:30px;
+    text-align: center;
+}
+/* portfolio section */
+.portfolio-section{
+    height: 120vh;
+    background-color: burlywood;
+}
+/* portfolio parent */
+.portfolio-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+  width:80%;
+  margin: 0 auto;
+  margin-top: 15px;
+  
+}
+/* portfolio child */
+.portfolio-child{
+    margin:5px;
+    height: 1.4%;
+    text-align: center;
+    padding-bottom: 10px;
+    border: 1px solid red;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+/* h3 of portfolio child */
+.portolio-child > h3{
+    margin-top:10px;
+    font-synthesis-weight: bold;
+    margin-left:1px;
+}
+/* img in portfolio child */
+.portfolio-child img{
+   width: 100%;
+}
+/* hover on portfolio child  */
+.portfolio-child:hover{
+    transform: scale(1.1);
+    background-color: lavender;
+}
+/* p of portfolio child */
+.portfolio-child p{
+    margin-top: 5px;
+    line-height: 1.4;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+/* button portfolio*/
+.button-port{
+    margin-top:15px;
+    background-color: var(--red-color);
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font: 16px;
+    padding: 0.5px;
+    font-weight: 500px;
+}
+/* hover of button */
+.button-port:hover{
+    /* background color will changw */
+    background-color: var(--red-shade);
+    /* text color will chnage */
+    color: var(--primary-shade);
+    /* you seen border when you hover on button */
+    border: 2px solid var(--red-color);
+}
+/* portfolio section ends */
+/* experience section starts */
+/* experience section */
+.experience-layout > h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding:30px;
+    text-align: center;
+}
+/* experience section */
+.experience-section{
+    height: 45vh;
+    background-color: var(--secondary-shade);
+    color: var(--primary-color);
+}
+/* experience details */
+.experience-details{
+    width:80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 2px solid var(--red-color);
+    padding-bottom: 30px;
+    margin-top: 40px;
+}
+
+.col p{
+    padding-top: 14px;
+    text-transform: uppercase;
+}
+/* experience section ends*/
+
+/* testimonial section */
+/* testimonial section */
+.testimonial-sec{
+    height: 90vh;
+    background-color: burlywood;
+}
+/* testimonial layout */
+.testimonial-layout > h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding:30px;
+    text-align: center;
+}
+/* testimonial parent */
+.testimonial-parent{
+    margin: 10%;
+    gap:10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* testimonial child */
+.testimonial-child{
+    width: 370px;
+    height: 280px;
+    padding: 0 25px;
+    box-shadow: 1px 2px 10px 5px bisque;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.testimonial-child:nth-child(2){
+    margin-bottom: 65px;
+}
+/* hover */
+.testimonial-child:hover{
+    margin-top: 65px;
+    box-shadow: 5px 5px 20px 5px #f7f6e7;
+}
+/* img on hover */
+.testimonial-child img{
+    width: 25%;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+    left: 40%;
+}
+/* review section */
+.review-sec{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+ .name-sec > h4{
+    text-align: right;
+ }
+/* .review-sec .icon-sec > i{
+
+    color: #d40700;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+}
+.fa-classic, .fa-regular, .fa-solid, .far, .fas {
+    font-family: "Font Awesome 6 Free";
+}
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+.fa-star:before {
+    content: "\f005";
+}
+.fa-star-half-alt:before, .fa-star-half-stroke:before {
+    content: "\f5c0";
+}*/
+
+.designation{
+    color: #b20600;
+    margin-top: 3px;
+} 
+/* testimonial section ends */
+
+/* contact Us */
+
+/* contact-us-sec */
+.contact-us-sec{
+    background-color: darkgray;
+    height: 50vh;
+    padding: 35px 0;
+}
+/* contact-us-layout */
+.contact-us-layout > h3{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    padding:30px;
+    text-align: center;
+    width: 80%;
+    margin:0 auto;
+}
+/* contact details */
+.contact-details{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 4rem;
+}
+/* h5 contact details */
+.contact-details> h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+/* h5 of contact center */
+.contact-center > h5
+{
+   padding-top: 10px; 
+   text-align: left;  
+}
+.contact-center #phone{
+  text-decoration: underline; 
+  color: #4b4c4c; 
+}
+/* anker tag of contact center */
+.contact-center #em
+{ 
+   text-decoration: none;
+   text-align: left;  
+   color: #4b4c4c;   
+}
+/* h5 contact left */
+.contact-left > h5
+{
+   padding-top: 10px; 
+   text-align: left;   
+}
+/* p of contact left */
+.contact-left > p
+{ 
+   text-align: left;   
+}
+/* p contact right */
+.contact-right > p
+{ 
+   text-align: left;   
+}
+/* p of contact details */
+.contact-details > p{
+    text-align: left;
+}
+#email-id{
+    width: 226px;
+    height: 28px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 2px 12px;
+ } 
+
+.right-sec input{
+    margin-left: 10px;
+}
+
+.right-sec button{
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+footer{
+    background-color: var(--secondary-shade);
+    padding: 10px 0;
+    color: burlywood;
+}
+.footer-sec{
+ text-align: center;  
+}
+.btn_last{
+    margin-top:15px;
+    background-color: var(--red-color);
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--red-color);
+    color: var(--primary-color);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font: 16px;
+    padding: 0.5px;
+    font-weight: 500px;
+}
+.btn_last:hover{
+    /* background color will changw */
+    background-color: var(--red-shade);
+    /* text color will chnage */
+    color: var(--primary-shade);
+    /* you seen border when you hover on button */
+    border: 2px solid var(--red-color);
+}
+
+
